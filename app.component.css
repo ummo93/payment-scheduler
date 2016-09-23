@@ -4191,3 +4191,13 @@ table.hover tr:nth-of-type(even):hover {
 .long-delay {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
+.popup-effect {
+  position: absolute;
+  left: -100%;
+  top: 50px;
+  display: block;
+  transition: .3s;
+}
+.popup-effect.popup-active {
+  left: 0;
+}

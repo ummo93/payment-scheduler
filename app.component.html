@@ -1,7 +1,56 @@
-<div class="row clearfix">
-    <a href="#!" data-open="exampleModal1" class="button float-left">Add new</a>
-    <a href="#!" data-open="exampleModal2" class="button float-right">Sign In</a>
+  <a href="#!" data-open="exampleModal1" class="button" onclick="document.getElementById('exampleModal1').className += ' popup-active'">Add new</a>
+  <div class="reveal popup-effect" id="exampleModal1" data-reveal>
+    <h3>Form</h3>
+    <form>
+      <div class="row">
+        <div class="medium-11 columns">
+          <label>Name of deal
+            <input type="text" placeholder="Name of deal">
+          </label>
+        </div>
+        <div class="medium-11 columns">
+          <label>Contact
+            <input type="text" placeholder="Contact">
+          </label>
+        </div>
+        <div class="medium-11 columns">
+          <label>Organization
+            <input type="text" placeholder="Organization">
+          </label>
+        </div>
+        <div class="medium-11 columns">
+          <label>Amount
+            <div class="input-group">
+              <span class="input-group-label">$</span>
+              <input class="input-group-field" type="number" placeholder="Amount">
+            </div>
+          </label>
+        </div>
+        <div class="medium-11 columns">
+          <label>Probability
+            <input type="text" placeholder="Probability">
+          </label>
+        </div>
+        <div class="medium-11 columns">
+          <label>Managers
+            <input type="text" placeholder="Managers">
+          </label>
+        </div>
+        <div class="medium-11 columns">
+          <label>Date
+            <input type="date" placeholder="Date">
+          </label>
+        </div>
+        <div>
+          <button class="success hollow button" href="#" type="submit">Send Form</button>
+        </div>
+      </div>
+    </form>
+    <button class="close-button" data-close aria-label="Close modal" type="button" onclick="document.getElementById('exampleModal1').className = document.getElementById('exampleModal1').className.replace('popup-active', '');">
+      <span aria-hidden="true">&times;</span>
+    </button>
   </div>
+  <br>
   <div class="row">
     <h3>Month 1</h3>
     <table class="hover">
@@ -166,80 +215,4 @@
         </tr>
       </tbody>
     </table>
-  </div>
-  <div class="reveal" id="exampleModal1" data-reveal>
-    <h3>Form</h3>
-    <form>
-      <div class="row">
-        <div class="medium-12 columns">
-          <label>Name of deal
-            <input type="text" placeholder="Name of deal">
-          </label>
-        </div>
-        <div class="medium-12 columns">
-          <label>Contact
-            <input type="text" placeholder="Contact">
-          </label>
-        </div>
-        <div class="medium-12 columns">
-          <label>Organization
-            <input type="text" placeholder="Organization">
-          </label>
-        </div>
-        <div class="medium-12 columns">
-          <label>Amount
-            <div class="input-group">
-              <span class="input-group-label">$</span>
-              <input class="input-group-field" type="number" placeholder="Amount">
-            </div>
-          </label>
-        </div>
-        <div class="medium-12 columns">
-          <label>Probability
-            <input type="text" placeholder="Probability">
-          </label>
-        </div>
-        <div class="medium-12 columns">
-          <label>Managers
-            <input type="text" placeholder="Managers">
-          </label>
-        </div>
-        <div class="medium-12 columns">
-          <label>Date
-            <input type="date" placeholder="Date">
-          </label>
-        </div>
-        <div class="medium-12 columns">
-          <button class="success hollow button" href="#" type="submit">Send Form</button>
-        </div>
-      </div>
-    </form>
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="reveal tiny" id="exampleModal2" data-reveal>
-    <h3>Sign In</h3>
-    <div class="large-12 large-centered columns">
-      <form>
-        <div class="row">
-          <div class="large-12 columns">
-            <input type="text" name="username" placeholder="Username" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-12 columns">
-            <input type="password" name="password" placeholder="Password" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-12 large-centered columns">
-            <input type="submit" class="button expanded" value="Log In" />
-          </div>
-        </div>
-      </form>
-    </div>
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
   </div>
