@@ -15,11 +15,26 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h1>My First Angular App</h1>'
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
+// export class AppComponent {
+//   content = 'app works!';
+//   constructor (private http: Http) {
+//     let headers = new Headers();
+//     headers.append('Content-Type', 'text/html');
+//     headers.append('Access-Control-Allow-Origin', '*');
+//     headers.append('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+//     this.http.get('/', {
+//       headers: headers
+//     }).forEach(data => {
+//         this.content = data.text();
+//       });
+//   }
+// }
 //# sourceMappingURL=app.component.js.map
